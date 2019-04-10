@@ -164,7 +164,7 @@ pub enum FullscreenMode {
     /// The container is in fullscreen within its current output
     Output,
     /// The container is in fullscreen and spans all available output
-    Global
+    Global,
 }
 
 #[derive(Eq, PartialEq, Debug, Clone)]
@@ -172,7 +172,7 @@ pub enum Floating {
     UserOn,
     UserOff,
     AutoOn,
-    AutoOff
+    AutoOff,
 }
 
 /// The reply to the `get_tree` request.
@@ -269,7 +269,7 @@ pub struct Node {
     pub fullscreen_mode: FullscreenMode,
 
     /// Floating status
-    pub floating: Floating
+    pub floating: Floating,
 }
 
 /// The reply to the `get_marks` request.
